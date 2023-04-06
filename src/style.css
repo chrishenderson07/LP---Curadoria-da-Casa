@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h1 {
+	@apply lg:text-5xl text-2xl;
+}
+
+.h2 {
+	@apply lg:text-4xl text-3xl font-poppins;
+}
+
+.button {
+	@apply lg:text-2xl text-xl font-semibold text-brand-100 px-50px py-5 bg-brandgreen-300 rounded-3xl transition-all hover:bg-brandgreen-200 hover:scale-110 hover:shadow-2xl;
+}
+
+.open {
+	/* @apply visible bg-brand-800 translate-y-10 mb-10; */
+}
+
+.accordion-content {
+	@apply transition-all opacity-0 h-0 overflow-hidden;
+}
+
+.open .accordion-content {
+	@apply transition-all opacity-100 h-auto;
+}
