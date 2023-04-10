@@ -5,16 +5,16 @@
 // content.style.display = 'none'
 
 // setTimeout(() => {
-// 	buyBox.style.display = 'block'
-// 	content.style.display = 'block'
+// 	buyBox.style.display = 'flex'
+// 	content.style.display = 'flex'
 // }, 5000)
 
-const accordionItems = document.querySelectorAll('.accordion-item')
+// const accordionItems = document.querySelectorAll('.accordion-item')
 
-accordionItems.forEach((accordion) => {
-	const title = accordion.querySelector('.accordion-title')
+// accordionItems.forEach((accordion) => {
+// 	const title = accordion.querySelector('.accordion-title')
 
-	title.addEventListener('click', () => {
-		accordion.classList.toggle('open')
-	})
-})
+// 	title.addEventListener('click', () => {
+// 		accordion.classList.toggle('open')
+// 	})
+// })
