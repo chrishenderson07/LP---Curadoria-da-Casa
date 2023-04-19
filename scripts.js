@@ -1,3 +1,7 @@
+const lazyLoad = new LazyLoad({
+	elements_selector: '.lazy',
+})
+
 // const buyBox = document.querySelector('#buyBox')
 // const content = document.querySelector('section#content')
 
@@ -7,7 +11,7 @@
 // setTimeout(() => {
 // 	buyBox.style.display = 'flex'
 // 	content.style.display = 'flex'
-// }, 5000)
+// }, 29000)
 
 // const accordionItems = document.querySelectorAll('.accordion-item')
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
@@ -13,16 +13,23 @@
 			rel="stylesheet"
 			href="./dist/style.css" />
 		<title>Curadoria da Casa</title>
+		<link
+			rel="shortcut icon"
+			href="./src/assets/favicon.png"
+			type="image/x-icon" />
 
 		<script
 			src="https://kit.fontawesome.com/a70698655e.js"
-			crossorigin="anonymous"></script>
+			crossorigin="anonymous"
+			defer></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
 	</head>
 	<body>
 		<div class="main relative pb-5">
 			<div
-				class="wrapper z-0 w-full lg:min-h-screen h-full bg-cover bg-center bg-fixed bg-opacity-90 absolute"
-				style="background-image: url('./src//assets/herobg.jpg')"></div>
+				class="wrapper lazy z-0 w-full lg:min-h-screen h-full bg-cover bg-center bg-fixed bg-opacity-90 absolute"
+				data-bg="./src/assets/herobg.webp"></div>
 			<div
 				class="w-full lg:min-h-screen h-full bg-gradient-to-t from-brand-700 to-brand-600 opacity-90 absolute"></div>
 
@@ -35,7 +42,7 @@
 				</h2>
 				<h2
 					class="h2 font-poppins font-semibold text-center text-brand-100 text-cente opacity-95">
-					Apenas 20 vagas para consultoria exclusiva!
+					Apenas 10 vagas para consultoria exclusiva!
 				</h2>
 
 				<p
@@ -56,12 +63,11 @@
 					minutos por dia!
 				</p>
 
+				<!-- Aqui você troca o video do Youtube -->
 				<iframe
-					class="w-10/12 aspect-video opacity-90 mt-1 m-auto rounded-3xl"
-					src="https://www.youtube.com/embed/wrIvDiaXu_4"
-					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowfullscreen>
+					class="lazy w-10/12 aspect-video opacity-90 mt-1 m-auto rounded-3xl"
+					data-src="https://www.youtube.com/embed/Mc39eEwy6Uw"
+					data-poster="./src/assets/curadoria-2.webp">
 				</iframe>
 
 				<div
@@ -98,9 +104,9 @@
 					<div
 						class="satisfacion flex flex-col mt-5 lg:w-7/12 w-10/12 font-roboto">
 						<img
-							src="./src/assets/compra-seugra-1024x147.png"
+							data-src="./src/assets/compra-seugra-1024x147.webp"
 							alt="Imagem de Compra Segura"
-							class="lg:w-9/12 w-10/12 text-center mx-auto" />
+							class="lazy lg:w-9/12 w-10/12 text-center mx-auto" />
 						<p class="text-brand-100 lg:text-lg justify-self-center">
 							<b>AVISO:</b> Essa oferta pode mudar a qualquer momento.
 						</p>
@@ -143,17 +149,15 @@
 					class="wrapper w-10/12 flex lg:flex-row flex-col justify-center lg:items-center lg:gap-3 gap-y-3 mx-auto">
 					<div class="video flex-1">
 						<iframe
-							class="w-full aspect-video rounded-3xl"
-							src="https://www.youtube.com/embed/GV4aiJ3-8A0"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen>
+							loading="lazy"
+							class="lazy w-full aspect-video rounded-3xl"
+							data-src="https://www.youtube.com/embed/GV4aiJ3-8A0">
 						</iframe>
 					</div>
 					<div class="image flex-1">
 						<img
-							class="w-12/12 rounded-3xl"
-							src="./src/assets/resumo-depoimento-Denise-1024x576.png"
+							class="lazy w-12/12 rounded-3xl"
+							data-src="./src/assets/resumo-depoimento-Denise-1024x576.webp"
 							alt="Imagem de depoimento" />
 					</div>
 				</div>
@@ -164,17 +168,15 @@
 					class="wrapper w-10/12 flex lg:flex-row flex-col justify-center lg:items-center gap-3 mx-auto">
 					<div class="video flex-1">
 						<iframe
-							class="w-full aspect-video rounded-3xl"
-							src="https://www.youtube.com/embed/FelSJIvwD88"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen>
+							loading="lazy"
+							class="lazy w-full aspect-video rounded-3xl"
+							data-src="https://www.youtube.com/embed/FelSJIvwD88">
 						</iframe>
 					</div>
 					<div class="image flex-1">
 						<img
-							class="w-12/12 rounded-3xl"
-							src="./src/assets/resumo-depoimento-Isabela-1024x576.png"
+							class="lazy w-12/12 rounded-3xl"
+							data-src="./src/assets/resumo-depoimento-Isabela-1024x576.webp"
 							alt="Imagem de depoimento" />
 					</div>
 				</div>
@@ -185,17 +187,15 @@
 					class="wrapper w-10/12 flex lg:flex-row flex-col justify-center lg:items-center gap-3 mx-auto">
 					<div class="video flex-1">
 						<iframe
-							class="w-full aspect-video rounded-3xl"
-							src="https://www.youtube.com/embed/nNJVCQ5-dLY"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen>
+							loading="lazy"
+							class="lazy w-full aspect-video rounded-3xl"
+							data-src="https://www.youtube.com/embed/nNJVCQ5-dLY">
 						</iframe>
 					</div>
 					<div class="image flex-1">
 						<img
-							class="w-12/12 rounded-3xl"
-							src="./src/assets/resumo-depoimento-Letz-1024x576.png"
+							class="lazy w-12/12 rounded-3xl"
+							data-src="./src/assets/resumo-depoimento-Letz-1024x576.webp"
 							alt="Imagem de depoimento" />
 					</div>
 				</div>
@@ -233,9 +233,9 @@
 				<div
 					class="satisfacion flex flex-col mt-5 lg:w-7/12 w-10/12 font-roboto">
 					<img
-						src="./src/assets/compra-seugra-1024x147.png"
+						data-src="./src/assets/compra-seugra-1024x147.webp"
 						alt="Imagem de Compra Segura"
-						class="lg:w-9/12 w-10/12 text-center mx-auto" />
+						class="lazy lg:w-9/12 w-10/12 text-center mx-auto" />
 					<p class="text-brand-700 lg:text-lg justify-self-center">
 						<b>AVISO:</b> Essa oferta pode mudar a qualquer momento.
 					</p>
@@ -252,8 +252,8 @@
 					"></div>
 
 				<div
-					class="overlay w-full lg:h-screen h-full bg-fixed bg-cover bg-center opacity-10 absolute top-0"
-					style="background-image: url('./src/assets/overlaybg2.jpg')"></div>
+					class="lazy overlay w-full lg:h-screen h-full bg-fixed bg-cover bg-center opacity-10 absolute top-0"
+					data-bg="./src/assets/overlaybg2.webp"></div>
 
 				<div
 					class="wrapperContent flex flex-col justify-center lg:w-4/6 w-full px-4 absolute top-20 left-1/2 -translate-x-1/2">
@@ -318,8 +318,8 @@
 					"></div>
 
 				<div
-					class="overlay w-full lg:h-full h-full bg-fixed bg-cover bg-center opacity-10 absolute top-0"
-					style="background-image: url('./src/assets/overlaybg2.jpg')"></div>
+					class="lazy overlay w-full lg:h-full h-full bg-fixed bg-cover bg-center opacity-10 absolute top-0"
+					data-bg="./src/assets/overlaybg2.webp"></div>
 
 				<div
 					class="wrapperContent flex flex-col justify-center lg:w-4/6 w-full px-4 absolute top-0 left-1/2 -translate-x-1/2">
@@ -340,8 +340,8 @@
 						class="wrapper flex lg:flex-row flex-col gap-y-4 items-center mt-10">
 						<div class="image self-start flex-1">
 							<img
-								class="rounded-3xl lg:w-10/12 md:w-8/12 sm:w-8/12 mx-auto"
-								src="./src/assets/grafico-1-sessao-5.png"
+								class="lazy rounded-3xl lg:w-10/12 md:w-8/12 sm:w-8/12 mx-auto"
+								data-src="./src/assets/grafico-1-sessao-5.webp"
 								alt="Imagem do Grafico" />
 						</div>
 						<div class="informations flex-1">
@@ -421,8 +421,8 @@
 					class="wrapper flex lg:flex-row flex-col gap-y-4 items-center mt-10">
 					<div class="image self-start flex-1">
 						<img
-							class="rounded-3xl lg:w-full md:w-8/12 sm:w-8/12 mx-auto"
-							src="./src/assets/piramide-nova-1024x925.png"
+							class="lazy rounded-3xl lg:w-full md:w-8/12 sm:w-8/12 mx-auto"
+							data-src="./src/assets/piramide-nova-1024x925.webp"
 							alt="Imagem do Grafico" />
 					</div>
 					<div class="informations flex-1 flex flex-col gap-3">
@@ -479,8 +479,8 @@
 					"></div>
 
 				<div
-					class="overlay w-full lg:h-full h-full bg-fixed bg-cover bg-center opacity-10 absolute top-0"
-					style="background-image: url('./src/assets/overlaybg2.jpg')"></div>
+					class="lazy overlay w-full lg:h-full h-full bg-fixed bg-cover bg-center opacity-10 absolute top-0"
+					data-bg="./src/assets/overlaybg2.webp"></div>
 
 				<div
 					class="wrapperContent flex flex-col justify-center lg:w-4/6 w-full px-4 absolute top-20 left-1/2 -translate-x-1/2">
@@ -503,8 +503,8 @@
 							<div
 								class="topic flex-1 flex justify-around items-center bg-brand-700 rounded-xl py-5 px-5 gap-4">
 								<img
-									class="w-14"
-									src="./src//assets/number-one-1.png"
+									class="lazy w-14"
+									data-src="./src//assets/number-one-1.webp"
 									alt="Número um" />
 								<h3 class="flex-1 text-brand-100 font-poppins text-3xl">
 									PANORAMA ATUAL
@@ -525,8 +525,8 @@
 							<div
 								class="topic flex-1 flex justify-around items-center bg-brand-700 rounded-xl py-5 px-5 gap-4">
 								<img
-									class="w-14"
-									src="./src//assets/number-2.png"
+									class="lazy w-14"
+									data-src="./src//assets/number-2.webp"
 									alt="Número um" />
 								<h3 class="flex-1 text-brand-100 font-poppins text-3xl">
 									PREPARAÇÃO
@@ -547,8 +547,8 @@
 							<div
 								class="topic flex-1 flex justify-around items-center bg-brand-700 rounded-xl py-5 px-5 gap-4">
 								<img
-									class="w-14"
-									src="./src//assets/number-3.png"
+									class="lazy w-14"
+									data-src="./src//assets/number-3.webp"
 									alt="Número Tres" />
 								<h3 class="flex-1 text-brand-100 font-poppins text-3xl">
 									PRÁTICA
@@ -574,10 +574,8 @@
 					style="background-image: radial-gradient(circle, #a2a791, #70755f)">
 					<div class="absolute inset-0">
 						<div
-							class="bg-cover bg-center bg-fixed h-full opacity-10"
-							style="
-								background-image: url('./src/assets/overlaybg2.jpg');
-							"></div>
+							class="lazy bg-cover bg-center bg-fixed h-full opacity-10"
+							data-bg="./src/assets/overlaybg2.webp"></div>
 						<div class="absolute inset-0 bg-black opacity-70"></div>
 					</div>
 
@@ -602,8 +600,8 @@
 								<div
 									class="topic flex-1 flex flex-col justify-between items-center bg-brand-700 rounded-xl py-7 px-5 gap-3">
 									<img
-										class="w-14"
-										src="./src//assets/number-one-1.png"
+										class="lazy w-14"
+										data-src="./src//assets/number-one-1.webp"
 										alt="Número um" />
 									<h3 class="flex-1 text-brand-100 font-poppins text-3xl">
 										CONTEXTUALIZAR
@@ -616,8 +614,8 @@
 								<div
 									class="topic flex-1 flex flex-col justify-between items-center bg-brand-700 rounded-xl py-7 px-5 gap-3">
 									<img
-										class="w-14"
-										src="./src/assets/number-2.png"
+										class="lazy w-14"
+										data-src="./src/assets/number-2.webp"
 										alt="Número um" />
 									<h3 class="flex-1 text-brand-100 font-poppins text-3xl">
 										CATEGORIZAR
@@ -631,8 +629,8 @@
 								<div
 									class="topic flex-1 flex flex-col justify-between items-center bg-brand-700 rounded-xl py-7 px-5 gap-3">
 									<img
-										class="w-14"
-										src="./src/assets/number-3.png"
+										class="lazy w-14"
+										data-src="./src/assets/number-3.webp"
 										alt="Número um" />
 									<h3 class="flex-1 text-brand-100 font-poppins text-3xl">
 										SELECIONAR
@@ -646,8 +644,8 @@
 								<div
 									class="topic flex-1 flex flex-col justify-between items-center bg-brand-700 rounded-xl py-7 px-5 gap-3">
 									<img
-										class="w-14"
-										src="./src/assets/number-four.png"
+										class="lazy w-14"
+										data-src="./src/assets/number-four.webp"
 										alt="Número um" />
 									<h3 class="flex-1 text-brand-100 font-poppins text-3xl">
 										ARRANJAR
@@ -945,9 +943,9 @@
 							<div
 								class="satisfacion flex flex-col mt-5 lg:w-7/12 w-10/12 font-roboto">
 								<img
-									src="./src/assets/compra-seugra-1024x147.png"
+									data-src="./src/assets/compra-seugra-1024x147.webp"
 									alt="Imagem de Compra Segura"
-									class="lg:w-9/12 w-10/12 text-center mx-auto" />
+									class="lazy lg:w-9/12 w-10/12 text-center mx-auto" />
 								<p class="text-brand-700 lg:text-lg font-light font-poppins">
 									<b>AVISO:</b> Essa oferta pode mudar a qualquer momento.
 								</p>
@@ -966,10 +964,8 @@
 					style="background-image: radial-gradient(circle, #a2a791, #70755f)">
 					<div class="absolute inset-0">
 						<div
-							class="bg-cover bg-center bg-fixed h-full opacity-10"
-							style="
-								background-image: url('./src/assets/overlaybg2.jpg');
-							"></div>
+							class="lazy bg-cover bg-center bg-fixed h-full opacity-10"
+							data-bg="./src/assets/overlaybg2.webp"></div>
 						<div class="absolute inset-0 bg-black opacity-70"></div>
 					</div>
 
@@ -977,8 +973,8 @@
 						class="wrapperContent py-24 w-11/12 lg:w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 opacity-95">
 						<div class="image">
 							<img
-								class="rounded-3xl shadow-2xl"
-								src="./src//assets/Foto-Mariana-Gerron-1195x1536.png"
+								class="lazy rounded-3xl shadow-2xl"
+								data-src="./src//assets/Foto-Mariana-Gerron-1195x1536.webp"
 								alt="Foto da Autora Mariana Geron" />
 						</div>
 
@@ -1023,10 +1019,8 @@
 					style="background-image: radial-gradient(circle, #a2a791, #70755f)">
 					<div class="absolute inset-0">
 						<div
-							class="bg-cover bg-center bg-fixed h-full opacity-10"
-							style="
-								background-image: url('./src/assets/overlaybg2.jpg');
-							"></div>
+							class="lazybg-cover bg-center bg-fixed h-full opacity-10"
+							data-bg="./src/assets/overlaybg2.webp"></div>
 						<div class="absolute inset-0 bg-black opacity-70"></div>
 					</div>
 
@@ -1153,8 +1147,8 @@
 
 						<div class="list-image-none">
 							<img
-								class="w-9/12 mx-auto rounded-3xl shadow-2xl"
-								src="./src/assets/asfkm.png"
+								class="lazy w-9/12 mx-auto rounded-3xl shadow-2xl"
+								data-src="./src/assets/asfkm.webp"
 								alt="Call com a Mariana Geron" />
 						</div>
 					</div>
@@ -1362,8 +1356,8 @@
 			<footer class="w-full py-6 bg-brand-1000">
 				<div class="wrapper container px-2 mx-auto flex flex-col items-center">
 					<img
-						class="w-64"
-						src="./src/assets/curadoria.jpg"
+						class="lazy w-64"
+						data-src="./src/assets/curadoria.webp"
 						alt="" />
 
 					<p class="text-brand-0 text-center text-sm font-poppins">
@@ -1392,16 +1386,16 @@
 					<div
 						class="imageWrapper w-full flex flex-col items-center md:flex-row md:justify-between mt-10">
 						<img
-							class="w-52"
-							src="./src/assets/curadoria-2.jpg"
+							class="lazy w-52"
+							data-src="./src/assets/curadoria-2.webp"
 							alt="Curadoria da Casa Imagem" />
 						<img
-							class="w-20"
-							src="./src/assets/curadoria-3.jpg"
+							class="lazy w-20"
+							data-src="./src/assets/curadoria-3.webp"
 							alt="Curadoria da Casa Imagem" />
 						<img
-							class="w-52 aspect-auto"
-							src="./src/assets/curadoria4.jpg"
+							class="lazy w-52 aspect-auto"
+							data-src="./src/assets/curadoria4.webp"
 							alt="Curadoria da Casa Imagem" />
 					</div>
 				</div>
